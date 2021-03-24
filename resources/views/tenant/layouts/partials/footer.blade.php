@@ -19,8 +19,8 @@
 <!-- Footer END -->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="{{ asset('js/manifest.js') }}"></script>
-<script src="{{ asset('js/vendor.js') }}"></script>
+{{-- <script src="{{ asset('js/manifest.js') }}"></script>
+<script src="{{ asset('js/vendor.js') }}"></script> --}}
 <script src="{{ asset('vito-bootstrapp/js/jquery.min.js') }}"></script>
 <script src="{{ asset('vito-bootstrapp/js/popper.min.js') }}"></script>
 <script src="{{ asset('vito-bootstrapp/js/bootstrap.min.js') }}"></script>
@@ -61,5 +61,6 @@
 <script src="{{ asset('vito-bootstrapp/js/chart-custom.js') }}"></script>
 <!-- Custom JavaScript -->
 <script src="{{ asset('vito-bootstrapp/js/custom.js') }}"></script>
+
 </body>
 </html>

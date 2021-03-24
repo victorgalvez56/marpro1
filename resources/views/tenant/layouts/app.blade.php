@@ -397,4 +397,4 @@
                </div>
             </div>
          </div>
-        @include('tenant.layouts.partials.header')
+        @include('tenant.layouts.partials.footer')
