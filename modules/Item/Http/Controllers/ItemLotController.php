@@ -16,9 +16,13 @@ use Carbon\Carbon;
 class ItemLotController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        return view('item::item-lots.index');
+                
+        $records = ItemLot::all();
+
+        // $items =  new ItemLotCollection($records->paginate(config('tenant.items_per_page')));
+        return view('item::item-lots.index',compact('records'));
     }
 
 
