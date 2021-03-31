@@ -1,30 +1,4 @@
-<!doctype html>
-<html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Vito - Responsive Bootstrap 4 Admin Dashboard Template</title>
-      <!-- Favicon -->
-      <link rel="shortcut icon" href="{{ asset('vito-bootstrapp/images/favicon.ico') }}" />
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="{{ asset('vito-bootstrapp/css/bootstrap.min.css') }}">
-      <!-- Typography CSS -->
-      <link rel="stylesheet" href="{{ asset('vito-bootstrapp/css/typography.css') }}">
-      <!-- Style CSS -->
-      <link rel="stylesheet" href="{{ asset('vito-bootstrapp/css/style.css') }}">
-      <!-- Responsive CSS -->
-      <link rel="stylesheet" href="{{ asset('vito-bootstrapp/css/responsive.css') }}">
-       <!-- Full calendar -->
-       <link rel="stylesheet" href="{{ asset('vito-bootstrapp/fullcalendar/core/main.css') }}">
-       <link rel="stylesheet" href="{{ asset('vito-bootstrapp/fullcalendar/daygrid/main.css') }}">
-       <link rel="stylesheet" href="{{ asset('vito-bootstrapp/fullcalendar/timegrid/main.css') }}">
-       <link rel="stylesheet" href="{{ asset('vito-bootstrapp/fullcalendar/list/main.css') }}">
 
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
-
-   </head>
    <body class="iq-page-menu-horizontal">
     <!-- loader Start -->
     {{-- <div id="loading">
