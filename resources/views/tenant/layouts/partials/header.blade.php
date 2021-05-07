@@ -35,7 +35,7 @@
                       <ul id="products" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                          <li><a href="item-lots">Productos</a></li>
                          <li><a href="categories">Categorías</a></li>
-                         <li><a href="calendar.html">Marcas</a></li>
+                         <li><a href="brands">Marcas</a></li>
                          <li><a href="calendar.html">Series</a></li>
                       </ul>
                    </li>

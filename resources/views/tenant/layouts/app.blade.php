@@ -91,25 +91,15 @@
     <script defer src="{{ asset('js/app.js') }}"></script>
 
 </head>
-<body class="pr-0">
 
-    <section class="body">
         <!-- start: header -->
         @include('tenant.layouts.partials.header')
         <!-- end: header -->
-        <div class="inner-wrapper">
-            <!-- start: sidebar -->
-            @include('tenant.layouts.partials.sidebar')
-            <!-- end: sidebar -->
-            <section role="main" class="content-body" id="main-wrapper">
+        <div id="content-page" class="content-page">
+            {{-- @include('tenant.layouts.partials.sidebar') --}}
               @yield('content')
-              {{-- @include('tenant.layouts.partials.sidebar_styles') --}}
-              {{-- @include('tenant.layouts.partials.sidebar_styles') --}}
-            </section>
-            
-            @yield('package-contents')
+              @yield('package-contents')
         </div>
-    </section>
     @if($show_ws)
         @if(strlen($phone_whatsapp) > 0)
         <a class='ws-flotante' href='https://wa.me/{{$phone_whatsapp}}' target="BLANK" style="background-image: url('{{asset('logo/ws.png')}}'); background-size: 70px; background-repeat: no-repeat;" ></a>

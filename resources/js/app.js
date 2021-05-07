@@ -11,6 +11,8 @@ import Vue from "vue";
 import ElementUI from "element-ui";
 import Axios from "axios";
 import moment from 'moment'
+import './plugins'
+import './directives'
 
 
 import lang from "element-ui/lib/locale/lang/es";
@@ -220,6 +222,11 @@ Vue.component(
     require("./views/tenant/discards/index.vue")
 );
 
+
+/*TEMPLATE DE VITO*/
+
+/*CARD*/
+
 Vue.mixin({
     filters: {
         toDecimals(number, decimal = 2) {
@@ -258,5 +265,5 @@ Vue.mixin({
     }
 })
 const app = new Vue({
-    el: "#main-wrapper"
+    el: "#content-page"
 });
