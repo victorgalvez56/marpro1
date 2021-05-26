@@ -1,23 +1,16 @@
 <template>
-    <div>
-        <div class="page-header pr-0">
-            <h2>
-                <a href="/dashboard"><i class="fas fa-tachometer-alt"></i></a>
-            </h2>
-            <ol class="breadcrumbs">
-                <li class="active"><span>Usuarios</span></li>
-            </ol>
-            <div class="right-wrapper pull-right">
+  <b-container fluid>
+    <b-row>
+      <b-col sm="12">
+        <iq-card>
+          <template v-slot:headerTitle>
+            <h4 class="card-title">Listado de usuarios</h4>
+          </template>
 
+          <template v-slot:headerAction v-if="typeUser === 'admin'">
                 <button type="button" class="btn btn-custom btn-sm  mt-2 mr-2" v-if="typeUser != 'integrator'" @click.prevent="clickCreate()"><i class="fa fa-plus-circle"></i> Nuevo</button>
+          </template>
 
-                <!--<button type="button" class="btn btn-custom btn-sm  mt-2 mr-2" @click.prevent="clickImport()"><i class="fa fa-upload"></i> Importar</button>-->
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header bg-info">
-                <h3 class="my-0">Listado de usuarios</h3>
-            </div>
             <div class="card-body">
                 <data-table :resource="resource">
                     <tr slot="heading">
@@ -68,9 +61,11 @@
                 :typeUser="typeUser"
                 :recordId="recordId"
             ></users-form>
-        </div>
-    </div>
-</template>
+    </iq-card>
+      </b-col>
+    </b-row>
+  </b-container>
+  </template>
 
 <script>
 import DataTable from "../../../components/DataTableUser.vue";

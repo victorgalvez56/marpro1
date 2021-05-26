@@ -1,21 +1,16 @@
 <template>
-    <div>
-        <div class="page-header pr-0">
-            <h2><a href="/dashboard"><i class="fas fa-tachometer-alt"></i></a></h2>
-            <ol class="breadcrumbs">
-                <li class="active"><span>Establecimientos</span></li>
-            </ol>
-            <div class="right-wrapper pull-right">
+  <b-container fluid>
+    <b-row>
+      <b-col sm="12">
+        <iq-card>
+          <template v-slot:headerTitle>
+            <h4 class="card-title">Establecimientos</h4>
+          </template>
 
+          <template v-slot:headerAction v-if="typeUser === 'admin'">
                 <button type="button" class="btn btn-custom btn-sm  mt-2 mr-2" v-if="typeUser != 'integrator'" @click.prevent="clickCreate()"><i class="fa fa-plus-circle"></i> Nuevo</button>
-
-                <!--<button type="button" class="btn btn-custom btn-sm  mt-2 mr-2" @click.prevent="clickImport()"><i class="fa fa-upload"></i> Importar</button>-->
-            </div>
-        </div>
+          </template>
         <div class="card">
-            <div class="card-header bg-info">
-                <h3 class="my-0">Listado de establecimientos</h3>
-            </div>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table">
@@ -42,18 +37,16 @@
                         </tbody>
                     </table>
                 </div>
-                <!-- <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-custom btn-sm  mt-2 mr-2" v-if="typeUser != 'integrator'" @click.prevent="clickCreate()"><i class="fa fa-plus-circle"></i> Nuevo</button>
-                    </div>
-                </div> -->
             </div>
             <establishments-form :showDialog.sync="showDialog"
                                 :recordId="recordId"></establishments-form>
             <establishment-series :showDialog.sync="showDialogSeries"
                                 :establishmentId="recordId"></establishment-series>
         </div>
-    </div>
+            </iq-card>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>

@@ -1,14 +1,12 @@
 <template>
-    <div>
-        <div class="page-header pr-0">
-            <h2>
-                <a href="/dashboard"><i class="fas fa-tachometer-alt"></i></a>
-            </h2>
-            <ol class="breadcrumbs">
-                <li class="active"><span>Productos</span></li>
-            </ol>
-            <div class="right-wrapper pull-right">
-                <template v-if="typeUser === 'admin'">
+  <b-container fluid>
+    <b-row>
+      <b-col sm="12">
+        <iq-card>
+          <template v-slot:headerTitle>
+            <h4 class="card-title">Productos</h4>
+          </template>
+          <template v-slot:headerAction v-if="typeUser === 'admin'">
                     <div class="btn-group flex-wrap">
                         <button
                             type="button"
@@ -94,13 +92,10 @@
                     >
                         <i class="fa fa-plus-circle"></i> Nuevo
                     </button>
-                </template>
-            </div>
-        </div>
-        <div class="card mb-0">
-            <div class="card-header bg-info">
-                <h3 class="my-0">Listado de productos</h3>
-            </div>
+          </template>
+
+          
+         <div class="card mb-0">
             <div class="data-table-visible-columns">
                 <el-dropdown :hide-on-click="false">
                     <el-button type="primary">
@@ -275,7 +270,13 @@
                 :showDialog.sync="showImportListPriceDialog"
             ></items-import-list-price>
         </div>
-    </div>
+        </iq-card>
+      </b-col>
+    </b-row>
+  </b-container>
+
+
+
 </template>
 <script>
 import ItemsForm from "./form.vue";

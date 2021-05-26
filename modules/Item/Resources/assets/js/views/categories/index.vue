@@ -7,7 +7,7 @@
             <h4 class="card-title">{{ title }}</h4>
           </template>
           <template v-slot:headerAction>
-            <b-button variant="primary" @click.prevent="clickCreate()">Add User</b-button>
+            <b-button variant="primary" @click.prevent="clickCreate()">Add Categorías</b-button>
           </template>
           <template v-slot:body>
             <data-table :resource="resource">

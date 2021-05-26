@@ -31,12 +31,12 @@
                       <a href="#menu-design" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="true"><i class="ri-menu-3-line"></i><span>Ventas</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                    </li>
                    <li>
-                      <a href="#products" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-record-circle-line"></i><span>Productos</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                      <a href="items" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-record-circle-line"></i><span>Productos</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                       <ul id="products" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                         <li><a href="item-lots">Productos</a></li>
+                         <li><a href="items">Productos</a></li>
                          <li><a href="categories">Categorías</a></li>
                          <li><a href="brands">Marcas</a></li>
-                         <li><a href="calendar.html">Series</a></li>
+                         <li><a href="item-lots">Series</a></li>
                       </ul>
                    </li>
                    <li>
@@ -69,8 +69,8 @@
                   <li>
                      <a href="#ui-elements" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false"><i class="ri-user-3-fill"></i><span>Usuarios/Locales & Series</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                      <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" >
-                        <li><a href="ui-colors.html">Usuarios</a></li>
-                        <li><a href="ui-typography.html">Establecimientos</a></li>
+                        <li><a href="users">Usuarios</a></li>
+                        <li><a href="establishments">Establecimientos</a></li>
                      </ul>
                   </li>
                   <li>
